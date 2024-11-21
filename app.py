@@ -20,7 +20,7 @@ col1,col2,col3 = st.columns(3)
 # 3. 데이터시각화
 
 with col2:
-    st.subheader('데이터 시각화1')
+    st.subheader('데이터 시각화1: 히트맵(상관관계 표시)')
     st.image('시각화1.png')
     st.subheader('데이터 시각화2: 부모의 참여도')
     st.image('시각화2.png')
