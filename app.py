@@ -2,7 +2,7 @@
 
 import streamlit as st
 import joblib as jl
-
+primaryColor=#FFE4C4
 
 # 1. 기계학습 모델 파일 로드
 
