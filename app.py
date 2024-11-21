@@ -6,7 +6,7 @@ import joblib as jl
 
 # 1. 기계학습 모델 파일 로드
 
-#model = jl.load('')
+model = jl.load('linear_regression_model.pkl')
 
 
 # 2. 모델 설명
@@ -31,14 +31,15 @@ with col2:
 
 with col1:
     st.subheader('사용자 정보 입력')
-    a = st.selectbox('부모님이 교육에 얼마나 관여하나요?',['Low','Medium','High'])
-    b = st.selectbox('공부를 위한 동기부여가 되어 있나요?',['Low','Medium','High'])
-    c = st.selectbox('인터넷을 사용할 수 있나요?',['Yes','No'])
-    d = st.selectbox('가족의 수입이 어느정도 되나요?',['Low','Medium','High'])
-    e = st.selectbox('부모님이  얼마나 관여하나요?',['Private','Public'])
-    f = st.selectbox('사교육을 받나요?',[''])
-    g = st.selectbox('공부하는 데 있어서 친구의 영향이 어떤가요?',[''])
-    h = st.selectbox('부모의 학력은 어떻게 되나요??',[''])
+    a = st.number_input('1주일 동안 공부하는 시간을 입력해주세요.',value=0)
+    b = st.number_input('지난 시험의 점수를 입력해주세요.',value=0)
+    c = st.selectbox('부모님이 교육에 얼마나 관여하나요? (낮음 : 0 , 중간 : 1, 높음 : 2)',['0','1','2'])
+    d = st.selectbox('공부를 위한 동기부여가 되어 있나요? (낮음 : 0 , 중간 : 1, 높음 : 2)',['0','1','2'])
+    e = st.selectbox('인터넷을 사용할 수 있나요? (네 : 0, 아니오 : 1)',['0','1'])
+    f = st.selectbox('가족의 수입이 어느정도 되나요? (낮음 : 0 , 중간 : 1, 높음 : 2)',['0','1','2'])
+    g = st.selectbox('사교육을 받나요?' (),['0','1'])
+    h = st.selectbox('공부하는 데 있어서 친구의 영향이 어떤가요? ()',['0',''])
+    i = st.selectbox('부모의 학력은 어떻게 되나요??',[''])
 
 
     
@@ -51,6 +52,6 @@ with col3:
     st.write('테스트 데이터 : 1982개')
 
 if st.button('점수 예측'):
-    input_data = [[]]
+    input_data = [[a,b,c,d,e,f,g,h,i]]
     p = model.predict(input_data)
     st.write('인공지능이 예상한 당신의 점수는',p)
