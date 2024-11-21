@@ -13,6 +13,8 @@ model = jl.load('linear_regression_model.pkl')
 
 st.title('환경에 따른 시험점수 예측')
 st.subheader('내가 문제일까, 환경이 문제일까?')
+st.write('')
+st.write('')
 col1,col2,col3 = st.columns(3)  
 
 # 3. 데이터시각화
