@@ -3,6 +3,14 @@
 import streamlit as st
 import joblib as jl
 
+st.code("""
+[theme]
+primaryColor="#F39C12"
+backgroundColor="#2E86C1"
+secondaryBackgroundColor="#AED6F1"
+textColor="#FFFFFF"
+font="monospace"
+""")
 
 # 1. 기계학습 모델 파일 로드
 
