@@ -31,14 +31,14 @@ with col2:
 
 with col1:
     st.subheader('사용자 정보 입력')
-    b = st.selectbox('부모님이 교육에 얼마나 관여하나요?',['Low','Medium','High'])
+    a = st.selectbox('부모님이 교육에 얼마나 관여하나요?',['Low','Medium','High'])
     b = st.selectbox('공부를 위한 동기부여가 되어 있나요?',['Low','Medium','High'])
-    b = st.selectbox('인터넷을 사용할 수 있나요?',['Yes','No'])
-    b = st.selectbox('가족의 수입이 어느정도 되나요?',['Low','Medium','High'])
-    b = st.selectbox('부모님이  얼마나 관여하나요?',['Private','Public'])
-    b = st.selectbox('사교육을 받나요?',[''])
-    b = st.selectbox('공부하는 데 있어서 친구의 영향이 어떤가요?',[''])
-    b = st.selectbox('부모의 학력은 어떻게 되나요??',[''])
+    c = st.selectbox('인터넷을 사용할 수 있나요?',['Yes','No'])
+    d = st.selectbox('가족의 수입이 어느정도 되나요?',['Low','Medium','High'])
+    e = st.selectbox('부모님이  얼마나 관여하나요?',['Private','Public'])
+    f = st.selectbox('사교육을 받나요?',[''])
+    g = st.selectbox('공부하는 데 있어서 친구의 영향이 어떤가요?',[''])
+    h = st.selectbox('부모의 학력은 어떻게 되나요??',[''])
 
 
     
